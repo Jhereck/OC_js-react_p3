@@ -1,0 +1,20 @@
+{
+  "name": "projet_3",
+  "version": "1.0.0",
+  "description": "Projet 3 du parcours diplomant Javascript React d'Openclassrooms.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jhereck/OC_js-react_p3.git"
+  },
+  "author": "Jh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jhereck/OC_js-react_p3/issues"
+  },
+  "homepage": "https://github.com/Jhereck/OC_js-react_p3#readme"
+}

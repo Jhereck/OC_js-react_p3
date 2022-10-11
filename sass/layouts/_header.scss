@@ -1,0 +1,22 @@
+.header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+                    img {
+                        width: 164px;
+                        height: 30px;
+                    }
+                }
+            .loc {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #EAEAEA;
+                padding: 20px 0 20px 0;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                    span:nth-child(1) {
+                        padding: 0 10px 0 0;
+                    }
+                 }

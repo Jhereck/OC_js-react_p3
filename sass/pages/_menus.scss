@@ -1,0 +1,191 @@
+@keyframes cascade {
+    0% {
+      transform: translateY(10px);
+      box-shadow: 5px 5px 20px transparent;
+      color: transparent;
+    }
+    100% {
+      transform: translateY(0px);
+      box-shadow: 5px 5px 20px #7e7e7e;
+      color: black;
+    }
+  }
+@keyframes bgc_box {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 120px;
+  }
+}
+
+@keyframes checkbox {
+  0% {
+    font-size: 35px;
+    transform: rotate(120deg);
+  }
+  100% {
+    font-size: 35px;
+    transform: rotate(360deg);
+  }
+}
+
+.entrees .element {
+        &:nth-child(2) {
+            animation-delay: 0.5s;
+            }
+        &:nth-child(3) {
+            animation-delay: 1s;
+            }
+        }
+.plats .element {
+        &:nth-child(1) {
+            animation-delay: 1.5s;
+            }
+        &:nth-child(2) {
+            animation-delay: 2s;
+            }
+        &:nth-child(3) {
+            animation-delay: 2.5s;
+            }
+        }
+.desserts .element {
+        &:nth-child(1) {
+            animation-delay: 3s;
+            }
+        &:nth-child(2) {
+            animation-delay: 3.5s;
+            }
+        &:nth-child(3) {
+            animation-delay: 4s;
+            }
+        }
+
+
+.header {
+    .arrow {
+        font-size: 30px;
+    }
+    .logo {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .illustration {
+        display: block;
+        text-align: center;
+            img {
+                width: 100%;
+                max-height: 400px;
+                object-fit: cover;
+                }
+        }
+    }
+
+.menu {
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    .menu__titre {
+                display: flex;
+                align-items: center;
+                column-gap: 30%;
+                margin: 0 0 0 20px;
+    }   
+    .fav_icon {
+                font-size: 30px;
+    }
+    .elements {
+                display: flex;
+                flex-wrap: wrap;
+    }
+    .element {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 350px;
+                height: 70px;
+                background-color: #F7F7F7;
+                border-radius: 20px;
+                margin: 0 20px 30px 20px;
+                box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                animation: cascade 0.6s linear both;
+
+            &__left {
+                height: 100%;
+                flex-grow: 3;
+                width: 100%;
+                margin: 10px 0px 0px 10px;
+                display: block;
+                overflow: hidden;
+                white-space: nowrap;
+
+                    &--titre {
+                            font-weight: 900;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            margin: 10px 0 0 10px;
+                    }
+                    &--p {
+                            font-size: 14px;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            margin: 5px 0 0 10px;
+                    }
+            }
+            &__right {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 100%;
+                    &--p {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            align-items: flex-end;
+                            height: 100%;
+                            margin: 0px 25px 30px 15px;
+                            font-weight: bold;
+                    }
+            }
+            &__anim {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0 20px 20px 0;
+                font-size: 0px;
+                color: white;
+                height: 100%;
+                background-color: #99E2D0;
+            }
+            &:hover {
+                cursor: pointer;
+                    .element__anim {
+                                animation: bgc_box 0.4s both cubic-bezier(0.1, 0.29, 0.01, 1.02);
+                    }
+                    .element__anim--icon {
+                                animation: checkbox 0.4s both cubic-bezier(0, 0.93, 0.23, 0.9);
+                    }
+            }
+
+            .titre, .prix {
+                font-weight: 900;
+            }
+        }
+
+    .commander {
+            display: block;
+            text-align: center;
+
+            .commander-btn {
+                        width: 220px;
+                        height: 50px;
+                        margin: 20px 0 40px 0;
+                        background-color: #A45CDC;
+                        border-radius: 20px;
+                        border: none;
+                        color: white;
+                        font-size: 16px;
+                }
+        }
+    }
